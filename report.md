@@ -6,6 +6,8 @@ l
 <br><br>
 <br><br>
 
+<p align='right'> 
+
 ## Original Trading Model
     precision    recall  f1-score   support
 
@@ -15,6 +17,9 @@ l
     accuracy                           0.55      4092
     macro avg       0.49      0.50     0.39      4092
     weighted avg    0.50      0.55     0.43      4092
+
+</p>
+
 <br><br>
 <br><br>
 
@@ -59,6 +64,7 @@ l
 <img style='float: left;' src='./Images/Quadratic_Discriminant_Analysis_Trading_Model.png'>
 <br><br>
 <br><br>
+
 <div style='text-align: justify'>  
 
 ## Quadratic Discriminant Analysis Trading Model
@@ -70,7 +76,9 @@ l
     accuracy                           0.54      4092
     macro avg      0.49      0.50      0.43      4092
     weighted avg   0.50      0.54      0.46      4092
+
 </div>
+
 <br><br>
 <br><br>
 
