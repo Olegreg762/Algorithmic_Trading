@@ -59,7 +59,7 @@ l
 <img style='float: left;' src='./Images/Quadratic_Discriminant_Analysis_Trading_Model.png'>
 <br><br>
 <br><br>
-<div style='text-align: center'>  
+<div style='text-align: justify'>  
 
 ## Quadratic Discriminant Analysis Trading Model
     precision    recall  f1-score   support
