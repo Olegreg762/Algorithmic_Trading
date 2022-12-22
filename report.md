@@ -59,6 +59,7 @@ l
 <img style='float: left;' src='./Images/Quadratic_Discriminant_Analysis_Trading_Model.png'>
 <br><br>
 <br><br>
+<div style='text-align: center'>  
 
 ## Quadratic Discriminant Analysis Trading Model
     precision    recall  f1-score   support
@@ -69,6 +70,7 @@ l
     accuracy                           0.54      4092
     macro avg      0.49      0.50      0.43      4092
     weighted avg   0.50      0.54      0.46      4092
+</div>
 <br><br>
 <br><br>
 
