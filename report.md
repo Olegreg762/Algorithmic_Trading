@@ -3,10 +3,7 @@ l
 ---- 
 <br>
 <img style='float: left;' src='./Images/first_trading_model.png'>
-<br><br>
-<br><br>
 
-<p align='right'> 
 
 ## Original Trading Model
     precision    recall  f1-score   support
@@ -22,12 +19,13 @@ l
 
 <br><br>
 <br><br>
+<br><br>
+<br><br>
 
 ----
 <br>
 <img style='float: left;' src='./Images/first_trading_model.png'>
-<br><br>
-<br><br>
+
 
 ## First Tuned Trading Model
     precision    recall  f1-score   support
@@ -40,12 +38,13 @@ l
     weighted avg   0.50      0.54      0.46      4092
 <br><br>
 <br><br>
+<br><br>
+<br><br>
 
 ---
 <br>
 <img style='float: left;' src='./Images/first_trading_model.png'>
-<br><br>
-<br><br>
+
 
 ## Second Tuned Trading Model
     precision    recall  f1-score   support
@@ -58,12 +57,13 @@ l
     weighted avg   0.50      0.54      0.46      4092
 <br><br>
 <br><br>
+<br><br>
+<br><br>
 
 ---
 <br>
 <img style='float: left;' src='./Images/Quadratic_Discriminant_Analysis_Trading_Model.png'>
-<br><br>
-<br><br>
+
 
 <div style='text-align: justify'>  
 
@@ -79,6 +79,8 @@ l
 
 </div>
 
+<br><br>
+<br><br>
 <br><br>
 <br><br>
 
