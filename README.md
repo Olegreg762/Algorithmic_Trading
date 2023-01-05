@@ -1,107 +1,94 @@
-# Machine Learning Trading Bot
+# $$- Machine - Learning - Algorithmic - Trading - Bot -$$
 
-![Decorative image.](Images/14-challenge-image.png)
+This repo contains a [Jupyter Notebook](./machine_learning_trading_bot.ipynb) that uses machine learning to create a algorithmic trading bots.<br>
+In the sections below are the results of these bots. Using the backtesting method I trained [First Tuned Model](./Images/first_tuned_trading_model.png) on a larger dataset than the original.<br>
+The [Second Tuned Model](./Images/second_tuned_trading_model.png) I adjsted the parameters of the slow and fast SMA values.<br>
+I then used a [Quadratic Discriminant Analysis Trading Model](./Images/Quadratic_Discriminant_Analysis_Trading_Model.png) in the third tuned model.
 
-Now, it's time to take what you've learned about machine learning and apply it to new situations. For this optional assignment, you'll create an algorithmic trading bot that learns and adapts to new data and evolving markets. Be sure to give it your all -- as the skills you hone will become powerful tools in your FinTech tool belt.
+---- 
+<br>
 
-## Background
+## Original Trading Model
+                precision    recall  f1-score   support
 
-In this Challenge, you’ll assume the role of a financial advisor at one of the top five financial advisory firms in the world. Your firm constantly competes with the other major firms to manage and automatically trade assets in a highly dynamic environment. In recent years, your firm has heavily profited by using computer algorithms that can buy and sell faster than human traders.
+        -1.0        0.43      0.04     0.07      1804
+         1.0        0.56      0.96     0.71      2288
 
-The speed of these transactions gave your firm a competitive advantage early on. But, people still need to specifically program these systems, which limits their ability to adapt to new data. You’re thus planning to improve the existing algorithmic trading systems and maintain the firm’s competitive advantage in the market. To do so, you’ll enhance the existing trading signals with machine learning algorithms that can adapt to new data.
+    accuracy                           0.55      4092
+    macro avg       0.49      0.50     0.39      4092
+    weighted avg    0.50      0.55     0.43      4092
 
-## What You're Creating
+<img src='./Images/first_trading_model.png'><br><br>
 
-You’ll combine your new algorithmic trading skills with your existing skills in financial Python programming and machine learning to create an algorithmic trading bot that learns and adapts to new data and evolving markets.
+### In the orginal model we can see some divergence in late 2018 that resulted in lower than expected returns.
 
-In a Jupyter notebook, you’ll do the following:
+<br>
 
-* Implement an algorithmic trading strategy that uses machine learning to automate the trade decisions.
+----
+<br>
 
-* Adjust the input parameters to optimize the trading algorithm.
+## First Tuned Trading Model
+                precision    recall  f1-score   support
 
-* Train a new machine learning model and compare its performance to that of a baseline model.
+        -1.0       0.44      0.02      0.04      1732
+         1.0       0.56      0.98      0.71      2211
 
-As part of your GitHub repository’s `README.md` file, you will also create a report that compares the performance of the machine learning models based on the trading predictions that each makes and the resulting cumulative strategy returns.
+    accuracy                            0.56      3943
+    macro avg       0.50      0.50      0.38      3943
+    weighted avg    0.51      0.56      0.42      3943
 
-## Files
 
-Download the following files to help you get started:
+<img src='./Images/first_Tuned_Trading_model.png'><br>
 
-[Unit 14 homework files](Starter_Code/Starter_Code.zip)
+### In this model where the training data was increased the there is greater returns than in the 
+### strategy between late 2018 up to the beginning of 2020. Actual returns where still higher than
+### original model.
+ 
 
-> **Note:** The provided CSV file contains OHLCV data for an MSCI&ndash;based emerging markets ETF that [iShares](https://www.ishares.com/us/products/268704/ishares-currency-hedged-msci-emerging-markets) issued. Investments in emerging markets make up an important aspect of a well-diversified investment portfolio. This is because the included equities have potentially higher long-term returns, even though they carry more risk.
+<br><br>
 
-## Instructions
+---
+<br>
 
-Use the starter code file to complete the steps that the instructions outline. The steps for this Challenge are divided into the following sections:
+## Second Tuned Trading Model
+                precision    recall  f1-score   support
 
-* Establish a Baseline Performance
+        -1.0       0.56      0.01      0.02      1791
+         1.0       0.56      1.00      0.72      2278
 
-* Tune the Baseline Trading Algorithm
+    accuracy                            0.56      4069
+    macro avg       0.56      0.50      0.37      4069
+    weighted avg    0.56      0.56      0.41      4069
 
-* Evaluate a New Machine Learning Classifier
 
-* Create an Evaluation Report
+<img src='./Images/second_Tuned_Trading_model.png'><br>
 
-### Establish a Baseline Performance
+### The second tuned model had the slow and fast SMA adjusted.
+### This resulted in a slightly higher actual returns and
+### greater adherence to the stragey returns.
 
-In this section, you’ll run the provided starter code to establish a baseline performance for the trading algorithm. To do so, complete the following steps.
+<br><br>
 
-Open the Jupyter notebook. Restart the kernel, run the provided cells that correspond with the first three steps, and then proceed to step four.
+---
+<br>
 
-1. Import the OHLCV dataset into a Pandas DataFrame.
+## Quadratic Discriminant Analysis Trading Model
+                precision    recall  f1-score   support
 
-2. Generate trading signals using short- and long-window SMA values.
+        -1.0       0.42      0.11      0.18      1804
+         1.0       0.56      0.88      0.68      2288
 
-3. Split the data into training and testing datasets.
+    accuracy                           0.54      4092
+    macro avg      0.49      0.50      0.43      4092
+    weighted avg   0.50      0.54      0.46      4092
 
-4. Use the `SVC` classifier model from SKLearn's support vector machine (SVM) learning method to fit the training data and make predictions based on the testing data. Review the predictions.
+<img src='./Images/Quadratic_Discriminant_Analysis_Trading_Model.png'><br>
 
-5. Review the classification report associated with the `SVC` model predictions.
+### The Quadratic Discriminant Analysis Trading Model performed very
+### simaler the orginal model on terms of actual returns.
+### The stragey predicted mich higher returns than the original.
 
-6. Create a predictions DataFrame that contains columns for “Predicted” values, “Actual Returns”, and “Strategy Returns”.
-
-7. Create a cumulative return plot that shows the actual returns vs. the strategy returns. Save a PNG image of this plot. This will serve as a baseline against which to compare the effects of tuning the trading algorithm.
-
-8. Write your conclusions about the performance of the baseline trading algorithm in the `README.md` file that’s associated with your GitHub repository. Support your findings by using the PNG image that you saved in the previous step.
-
-### Tune the Baseline Trading Algorithm
-
-In this section, you’ll tune, or adjust, the model’s input features to find the parameters that result in the best trading outcomes. (You’ll choose the best by comparing the cumulative products of the strategy returns.) To do so, complete the following steps:
-
-1. Tune the training algorithm by adjusting the size of the training dataset. To do so, slice your data into different periods. Rerun the notebook with the updated parameters, and record the results in your `README.md` file. Answer the following question: What impact resulted from increasing or decreasing the training window?
-
-    > **Hint** To adjust the size of the training dataset, you can use a different `DateOffset` value&mdash;for example, six months. Be aware that changing the size of the training dataset also affects the size of the testing dataset.
-
-2. Tune the trading algorithm by adjusting the SMA input features. Adjust one or both of the windows for the algorithm. Rerun the notebook with the updated parameters, and record the results in your `README.md` file. Answer the following question: What impact resulted from increasing or decreasing either or both of the SMA windows?
-
-3. Choose the set of parameters that best improved the trading algorithm returns. Save a PNG image of the cumulative product of the actual returns vs. the strategy returns, and document your conclusion in your `README.md` file.
-
-### Evaluate a New Machine Learning Classifier
-
-In this section, you’ll use the original parameters that the starter code provided. But, you’ll apply them to the performance of a second machine learning model. To do so, complete the following steps:
-
-1. Import a new classifier, such as `AdaBoost`, `DecisionTreeClassifier`, or `LogisticRegression`. (For the full list of classifiers, refer to the [Supervised learning page](https://scikit-learn.org/stable/supervised_learning.html) in the scikit-learn documentation.)
-
-2. Using the original training data as the baseline model, fit another model with the new classifier.
-
-3. Backtest the new model to evaluate its performance. Save a PNG image of the cumulative product of the actual returns vs. the strategy returns for this updated trading algorithm, and write your conclusions in your `README.md` file. Answer the following questions: Did this new model perform better or worse than the provided baseline model? Did this new model perform better or worse than your tuned trading algorithm?
-
-### Create an Evaluation Report
-
-In the previous sections, you updated your `README.md` file with your conclusions. To accomplish this section, you need to add a summary evaluation report at the end of the `README.md` file. For this report, express your final conclusions and analysis. Support your findings by using the PNG images that you created.
+<br><br>
 
 ---
 
-## Submission
-
-* Use the started code provided to create the machine learning trading bot and host the notebook and the required files.
-
-* Include a `README.md` file with your conclusions as requested.
-
-* Submit the link to your GitHub project to Bootcamp Spot.
-
----
-
-© 2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
