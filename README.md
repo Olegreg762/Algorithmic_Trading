@@ -1,4 +1,4 @@
-# -Machine-Learning-Algorithmic-Trading-Bot-
+# $$Machine-Learning-Algorithmic-Trading-Bot$$
 
 This repo contains a [Jupyter Notebook](./machine_learning_trading_bot.ipynb) that uses machine learning to create a algorithmic trading bots.<br>
 In the sections below are the results of these bots. Using the backtesting method I trained [First Tuned Model](#original-trading-model) on a larger dataset than the original.<br>
