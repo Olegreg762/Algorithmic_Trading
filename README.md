@@ -62,7 +62,7 @@ I then used a [Quadratic Discriminant Analysis Trading Model](#quadratic-discrim
     weighted avg    0.56      0.56      0.41      4069
 
 
-<img src='./Images/second_Tuned_Trading_model.png'><br>
+<img src='./Images/second_tuned_trading_model.png'><br>
 
 ### The second tuned model had the slow and fast SMA adjusted with the updated training set.
 ### This resulted in a slightly higher actual returns.
