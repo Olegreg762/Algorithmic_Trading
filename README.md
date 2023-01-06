@@ -1,4 +1,4 @@
-# $$-Machine-Learning-Algorithmic-Trading-Bot-$$
+# -Machine-Learning-Algorithmic-Trading-Bot-
 
 This repo contains a [Jupyter Notebook](./machine_learning_trading_bot.ipynb) that uses machine learning to create a algorithmic trading bots.<br>
 In the sections below are the results of these bots. Using the backtesting method I trained [First Tuned Model](#original-trading-model) on a larger dataset than the original.<br>
@@ -22,9 +22,9 @@ I then used a [Quadratic Discriminant Analysis Trading Model](#quadratic-discrim
 
 ### In the orginal model we can see some divergence in late 2018 that resulted in lower than expected returns.<br>
 
-[Return to Top](#machine-learning-algorithmic-trading-bot)
-
 <br>
+
+[Return to Top](#machine-learning-algorithmic-trading-bot)
 
 ----
 <br>
@@ -48,8 +48,6 @@ I then used a [Quadratic Discriminant Analysis Trading Model](#quadratic-discrim
 
 [Return to Top](#machine-learning-algorithmic-trading-bot)
 
-<br><br>
-
 ---
 <br>
 
@@ -71,8 +69,6 @@ I then used a [Quadratic Discriminant Analysis Trading Model](#quadratic-discrim
 
 [Return to Top](#machine-learning-algorithmic-trading-bot)
 
-<br><br>
-
 ---
 <br>
 
@@ -93,8 +89,6 @@ I then used a [Quadratic Discriminant Analysis Trading Model](#quadratic-discrim
 ### The stragey predicted much higher returns than the original.
 
 [Return to Top](#machine-learning-algorithmic-trading-bot)
-
-<br><br>
 
 ---
 
