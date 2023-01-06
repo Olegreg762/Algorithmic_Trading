@@ -39,7 +39,7 @@ I then used a [Quadratic Discriminant Analysis Trading Model](#quadratic-discrim
     weighted avg    0.51      0.56      0.42      3943
 
 
-<img src='./Images/first_Tuned_Trading_model.png'><br>
+<img src='./Images/first_tuned_trading_model.png'><br>
 
 ### In this model where the training data was increased the there is greater returns than in the 
 ### strategy between late 2018 up to the beginning of 2020. Actual returns where still higher than
