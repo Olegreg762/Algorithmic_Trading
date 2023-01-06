@@ -1,9 +1,9 @@
-# $$- Machine - Learning - Algorithmic - Trading - Bot -$$
+# $$-Machine-Learning-Algorithmic-Trading-Bot-$$
 
 This repo contains a [Jupyter Notebook](./machine_learning_trading_bot.ipynb) that uses machine learning to create a algorithmic trading bots.<br>
-In the sections below are the results of these bots. Using the backtesting method I trained [First Tuned Model](./Images/first_tuned_trading_model.png) on a larger dataset than the original.<br>
-The [Second Tuned Model](./Images/second_tuned_trading_model.png) I adjsted the parameters of the slow and fast SMA values.<br>
-I then used a [Quadratic Discriminant Analysis Trading Model](./Images/Quadratic_Discriminant_Analysis_Trading_Model.png) in the third tuned model.
+In the sections below are the results of these bots. Using the backtesting method I trained [First Tuned Model](#original-trading-model) on a larger dataset than the original.<br>
+The [Second Tuned Model](#second-tuned-trading-model) I adjsted the parameters of the slow and fast SMA values.<br>
+I then used a [Quadratic Discriminant Analysis Trading Model](#quadratic-discriminant-analysis-trading-model) in the third tuned model.
 
 ---- 
 <br>
@@ -20,7 +20,8 @@ I then used a [Quadratic Discriminant Analysis Trading Model](./Images/Quadratic
 
 <img src='./Images/first_trading_model.png'><br><br>
 
-### In the orginal model we can see some divergence in late 2018 that resulted in lower than expected returns.
+### In the orginal model we can see some divergence in late 2018 that resulted in lower than expected returns.<br>
+[Return to Top](#machine-learning-algorithmic-trading-bot)
 
 <br>
 
@@ -43,7 +44,7 @@ I then used a [Quadratic Discriminant Analysis Trading Model](./Images/Quadratic
 ### In this model where the training data was increased the there is greater returns than in the 
 ### strategy between late 2018 up to the beginning of 2020. Actual returns where still higher than
 ### original model.
- 
+[Return to Top](#machine-learning-algorithmic-trading-bot)
 
 <br><br>
 
@@ -64,7 +65,8 @@ I then used a [Quadratic Discriminant Analysis Trading Model](./Images/Quadratic
 <img src='./Images/second_Tuned_Trading_model.png'><br>
 
 ### The second tuned model had the slow and fast SMA adjusted with the updated training set.
-### This resulted in a slightly higher actual returns
+### This resulted in a slightly higher actual returns.
+[Return to Top](#machine-learning-algorithmic-trading-bot)
 
 <br><br>
 
@@ -86,6 +88,7 @@ I then used a [Quadratic Discriminant Analysis Trading Model](./Images/Quadratic
 ### The Quadratic Discriminant Analysis Trading Model performed very
 ### simaler the orginal model on terms of actual returns.
 ### The stragey predicted much higher returns than the original.
+[Return to Top](#machine-learning-algorithmic-trading-bot)
 
 <br><br>
 
@@ -96,5 +99,5 @@ I then used a [Quadratic Discriminant Analysis Trading Model](./Images/Quadratic
 Overall the Quadratic Discriminant Analysis Trading Model performed the best when it came to Actual Returns.<br>
 Although non of the models where very good in their predictions.<br>
 With only slightly better than 50% precision none of the models could be considered particularly useful. 
-
+[Return to Top](#machine-learning-algorithmic-trading-bot)
 ---
